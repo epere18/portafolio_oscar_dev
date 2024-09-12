@@ -9,12 +9,14 @@ const servRoute = require("./src/routes/servRoute");
 
 const app = express();
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 //**Middleware */
 
 app.use(express.static(path.resolve(__dirname, "../public")));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
+app.use(cors());
 
 //**Templates engine EJS */
 app.set("view engine, ejs");
