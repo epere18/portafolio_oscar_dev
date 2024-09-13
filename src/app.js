@@ -13,8 +13,8 @@ const cors = require("cors");
 
 //**Middleware */
 
-app.use(express.static(path.resolve(__dirname, "./public")));
-app.use(express.urlencoded({extended:false}));
+app.use(express.static(path.resolve(__dirname, "../public")));
+app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cors());
 
@@ -36,6 +36,11 @@ app.listen(puerto, () => {
     console.log(`Servidor Web corriendo en el ${puerto}`);
 })
 
+//**404 redirect */
+
+app.use((req, res) => {
+    res.status(404).render("no-fount");
+});
 
 
  module.exports = app;
