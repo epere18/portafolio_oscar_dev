@@ -5,7 +5,7 @@ const { title } = require("process");
 const mainController = {
 
     index : (req, res) => {
-        res.render("index",{title: "Home"});
+        res.render("index",{title: "Web & Data Analytics Freelancer"});
     }
 
 
