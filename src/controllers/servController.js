@@ -4,7 +4,7 @@ const fs = require("fs");
 const servController = {
 
 service : (req, res) => {
-    res.send("Portafolio");
+    res.render("services");
 }
 
 }

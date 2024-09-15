@@ -6,6 +6,10 @@ const mainController = {
 
     index : (req, res) => {
         res.render("index",{title: "Web & Data Analytics Freelancer"});
+    },
+
+    contact : (req, res) => {
+        res.render("contacto", {title: "Contacto"});
     }
 
 

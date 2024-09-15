@@ -39,7 +39,7 @@ app.listen(puerto, () => {
 //**404 redirect */
 
 app.use((req, res) => {
-    res.status(404).render("no-fount");
+    res.status(404).render("not-found");
 });
 
 

@@ -4,7 +4,7 @@ const fs = require("fs");
 const portController = {
 
     port : (req, res) => {
-        res.send("Portafolio");
+        res.render("portfolio");
     }
 
 

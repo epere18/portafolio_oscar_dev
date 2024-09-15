@@ -6,7 +6,7 @@ const mainController = require("../controllers/mainController");
 //**Routes */
 
 router.get("/", mainController.index);
-// router.get("/contacto", mainController.contacto);
+router.get("/contacto", mainController.contact);
 // router.post("/contacto", mainController.contactoPost);
 
 module.exports = router;
