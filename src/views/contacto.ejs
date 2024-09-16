@@ -5,15 +5,64 @@
 <%-include("partials/head.ejs")%>
 <!--head FIN-->
 
-<body>
+<body class="index-page">
 
 <!--header INIO-->
 <%-include("partials/header.ejs")%>
 <!--header FIN-->
 
-<main>
+<main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li class="current">Contacto</li>
+            </ol>
+          </nav>
+          <h1>Contactenos</h1>
+        </div>
+      </div><!-- End Page Title -->
 
-    <section>
+
+  <section id="contact" class="contact section">
+    <!-- Section Title -->    
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Completa el formulario para enviarnos tu consulta</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 contac">
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Dirección</h3>
+              <p>Caseros CP 1678, Buenos Aires, BA </p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Teléfono</h3>
+              <p>+54 9 1161756447</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email</h3>
+              <p>epere18@hotmail.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
         <div class="col-lg-8"></div>
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
@@ -44,10 +93,37 @@
 
               </div>
             </form>
-          </div><!-- End Contact Form -->
-    </section>
+        </div>
+        <!-- End Contact Form -->
+  </section>
 
 </main>
+
+  <!--footer INICIO-->
+  <%-include("partials/footer.ejs")%>
+  <!--footer FIN-->
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/typed.js/typed.umd.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
     
 </body>
 </html>

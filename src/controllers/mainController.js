@@ -10,6 +10,10 @@ const mainController = {
 
     contact : (req, res) => {
         res.render("contacto", {title: "Contacto"});
+    },
+
+    perfil : (req, res) => {
+        res.render("perfil", {title: "Mi Perfil"});
     }
 
 
